@@ -2,17 +2,17 @@ package introduction
 
 // \n - Skip a line
 fun main() {
-    var name = "Verônica"
-    var surname = "Ribeiro"
-    var skipALine = '\n'
+    val name = "Verônica"
+    val surname = "Ribeiro"
+    val skipALine = '\n'
     println(name + skipALine + surname)
 
     println("-------------------")
 
     // \t - Make a Tab
-    var firstName = "Verônica"
-    var lastName = "Ribeiro"
-    var makeATab = '\t'
+    val firstName = "Verônica"
+    val lastName = "Ribeiro"
+    val makeATab = '\t'
     println(firstName + makeATab + lastName)
 
 }
