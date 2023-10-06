@@ -27,4 +27,7 @@ class User (var nome: String, var isAdmin: Boolean) {
     constructor(nome: String) : this(nome, false) {
         println("Executei o construtor 2")
     }
+
+    lateinit var sobrenome: String
+    fun output() = println("Olá usuário $nome $sobrenome, você é admin: $isAdmin")
 }
