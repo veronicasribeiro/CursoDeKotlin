@@ -2,8 +2,7 @@ package oop
 
 fun main() {
 
-    val usuario1 = Usuario()
-    usuario1.nome = "Luffy"
+    val usuario1 = Usuario("Luffy", true)
     println(usuario1.caixaAlta())
 
     usuario1.atualizarNome("Zoro")

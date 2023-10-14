@@ -14,7 +14,7 @@ fun main(){
 
 
     // Código que busca no servidor a bandeira baseada no nome do cartão
-    val cartaoCreditoNomeAPI = "visa" // Esse "visa" veio do servidor
+    val cartaoCreditoNomeAPI = "master" // Esse "visa" veio do servidor
 
     // .valueOf - É uma propriedade embutida da enum class para atribuir um valor para a mesma
     // CartadoDeCredito recebe o valor que estará dento do cartaoCreditoNomeAPI
@@ -24,12 +24,23 @@ fun main(){
 
     // Dar desconto para a pessoa que comprar usando VISA
 
+    /*
     if (cartao == CartaoDeCredito.VISA) {
         println("Dar desconto")
     } else {
         println("Avisa que o cartão VISA tem desconto")
         // Você tem acesso as propriedades
         println("Você está usando o cartão ${cartao.label}")
+    }
+     */
+
+    // Usando When
+    when(cartao) {
+        CartaoDeCredito.VISA -> println("Dá Desconto")
+        else -> {
+            println("Avisa que o cartão VISA tem desconto")
+            println("Você está usando o cartão ${cartao.label}")
+        }
     }
 
 }
