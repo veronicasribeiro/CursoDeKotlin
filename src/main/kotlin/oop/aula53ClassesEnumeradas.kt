@@ -50,4 +50,4 @@ enum class CartaoDeCredito(val label: String) {
   //ADMIN,
   //USUARIO,
   //FUNCIONARIO
-}
+//}
