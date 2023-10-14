@@ -46,8 +46,8 @@ enum class CartaoDeCredito(val label: String) {
 }
 
 // Posso checar que tipo de conta é e fazer alterações de acordo com cada tipo de conta
-enum class Perfil {
-    ADMIN,
-    USUARIO,
-    FUNCIONARIO
+//enum class Perfil {
+  //ADMIN,
+  //USUARIO,
+  //FUNCIONARIO
 }
