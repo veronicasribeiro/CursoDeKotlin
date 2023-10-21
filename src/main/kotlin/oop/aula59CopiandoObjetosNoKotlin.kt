@@ -1,10 +1,8 @@
 package oop
 
-import condicoesLogicas.CartaoDeCredito
-
 fun main() {
-    val cartao1 = CartaoCredito(5982549, "05/24")
-    val cartao2 = CartaoCredito(8594495, "01/26")
+    val cartao1 = CartaoCreditoCopiado(5982549, "05/24")
+    val cartao2 = CartaoCreditoCopiado(8594495, "01/26")
     val usuarioA = UsuarioCopiado("Zoro", false, cartao1)
     // Copiando usuario A para o usuario B
     //val usuarioB = usuarioA.copy()
@@ -24,5 +22,5 @@ fun main() {
 
 }
 
-data class CartaoCredito(var numero: Int, var vencimento: String)
-data class UsuarioCopiado(var nome: String, var isAdmin: Boolean, var cartaoCredito: CartaoCredito)
+data class CartaoCreditoCopiado(var numero: Int, var vencimento: String)
+data class UsuarioCopiado(var nome: String, var isAdmin: Boolean, var cartaoCredito: CartaoCreditoCopiado)
