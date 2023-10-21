@@ -1,4 +1,4 @@
-package oop
+package tiposDeClasses
 
 fun main() {
     val ritaLee = Musico()

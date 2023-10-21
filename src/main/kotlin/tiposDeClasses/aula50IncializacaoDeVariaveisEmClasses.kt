@@ -1,4 +1,6 @@
-package oop
+package tiposDeClasses
+
+import oop.User
 
 // FORMAS DE INICIALIZAR UMA VARIÁVEL DENTRO DE UMA CLASSE
 // 1. Variável imutável
