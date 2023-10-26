@@ -13,10 +13,15 @@ fun main() {
     println(alunoA.matriculaID)
     println(alunoA.nome)
     println(alunoA.descricao())
+
+    /* Se eu não preciso da classe eu posso considerar ela uma classe abstrata, somente as filhas irão ter uma
+    instância viva
+     */
+    //val pessoa = Pessoa("Maria", "Rua B")
 }
 
 // open class - A classe tradicional NÃO permite que se tenha herança, para isso usamos o OPEN CLASS
-open class Pessoa(var nome: String, var endereco: String) {
+abstract class Pessoa(var nome: String, var endereco: String) {
     // protected - variável protegida para acesso somente para pai e filhos
     protected var acessoBiblioteca = false
     fun descricao() = "Meu nome é $nome e meu endereço é $endereco e meu acesso a biblioteca é: $acessoBiblioteca"
@@ -30,7 +35,6 @@ class Professor(nome: String, endereco: String) : Pessoa(nome, endereco) {
     }
 
 }
-
 class Aluno(var matriculaID: Int, nome: String, endereco: String) : Pessoa(nome, endereco) {
 
 }
