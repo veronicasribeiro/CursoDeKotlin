@@ -6,6 +6,9 @@ fun main() {
 
     val flauta = FlautaTeste("Flauta X")
     flauta.afinar()
+
+    val violino = ViolinoTeste("Violino Y")
+    violino.afinar()
 }
 
 // abstract class
@@ -21,11 +24,31 @@ abstract class InstrumentoTeste(nome: String) {
     // Só que o comportamento é diferente -> Concreto (Bloco de códigos)
 }
 
-class GuitarraTeste(nome: String) : InstrumentoTeste(nome) {
+abstract class InstrumentoDeCordas(nome: String, var quantCordas: Int) : InstrumentoTeste(nome) {
+    // Não é obrigado a IMPLEMENTAR/DEFINIR o comportamento da assinatura da fun abstract
+
+    /*Toda classe abstrata não é obrigada a IMPLEMENTAR/DEFINIR o comportamento da assinatura da função abstract
+    porque ela é abstrata, ela não precisa, somente o último da herança é obrigado a implementar porque é ela que
+    você vai instanciar
+     */
+
+    /*
+    EU VOU INSTANCIAR AS CLASSES FILHAS, LOGO EU VOU PRECISAR DEFINIR OS
+    COMPORTAMENTOS QUE TODAS AS CLASSES PAI DEFINIU PARA ELA
+     */
+}
+
+class GuitarraTeste(nome: String) : InstrumentoDeCordas(nome, 6) {
 
     // override - Referência para o abstract fun afinar() da classe super
     override  fun afinar() {
         println("Guitarra sendo afinada")
+    }
+}
+
+class ViolinoTeste(nome: String) : InstrumentoDeCordas(nome, 4) {
+    override fun afinar() {
+        println("Violino sendo afinado")
     }
 }
 
