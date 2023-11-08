@@ -1,6 +1,6 @@
 package oop
 
-class Usuario(var nome: String, var isAdmin: Boolean) {
+data class Usuario(var nome: String, var isAdmin: Boolean) {
 
     fun caixaAlta() : String {
         return "Olá ${nome.uppercase()}"
