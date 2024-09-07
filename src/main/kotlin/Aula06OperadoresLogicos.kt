@@ -8,7 +8,7 @@ fun main() {
     // Cocatenar
     println("Minha idade: " + textoIdade)
 
-    var booleana: Boolean = false
+    val booleana: Boolean = false
     // O que é falso vira verdadeiro e o que é verdadeiro vira falso
     println(!booleana)
 }
