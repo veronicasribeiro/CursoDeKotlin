@@ -23,8 +23,8 @@ fun main() {
         esse nome. Caso contrário, exiba o nome fornecido.
     * */
 
-    val nome: String? = null ?: "Usuário Desconhecido"
-    val mensagem: String = "Boas vindas, $nome!"
+    val nome: String? = null
+    val mensagem: String = "Boas vindas, ${nome ?: "Usuário Desconhecido"}!"
     println(mensagem)
 
 }
