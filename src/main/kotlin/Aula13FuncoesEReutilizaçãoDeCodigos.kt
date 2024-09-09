@@ -7,8 +7,8 @@ fun main() {
 
     olaMundo()
 
-    val precoDoProduto: Double = 100.0
-    val porcentagemDoDesconto: Double = 101.0
+    val precoDoProduto = 100.0
+    val porcentagemDoDesconto = 101.0
     println("Preço do produto: $precoDoProduto")
     println("Porcentagem de desconto: $porcentagemDoDesconto")
     println("O preço final com desconto é: ${calcularDesconto(precoDoProduto, porcentagemDoDesconto)}")
