@@ -35,7 +35,6 @@ fun main() {
 
     livroA.lerLivro()
 
-    println()
 
 
 }
