@@ -33,16 +33,6 @@ fun main() {
     usuarioA.imprimirCaixaAlta()
     usuarioB.imprimirCaixaAlta()
 
-    val usuarioX = User()
-    usuarioX.nome = "Luffy"
-    // Armazenando a variável de retorno
-    val usuarioLength = usuarioX.getNameLength()
-    println(usuarioLength)
-
-    val usuarioY = User()
-    usuarioY.nome = "Gustavo"
-    println(usuarioY.getNameLength())
-
 }
 
 // molde
