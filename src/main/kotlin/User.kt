@@ -1,6 +1,10 @@
 // constructor - inicializar o objeto
             // Especificar o nome aqui é redundante
-class User constructor(var nome: String){
+                                                    // posso passar um valor defalt ou fazer um segundo construtor
+class User constructor(var nome: String, var isAdmin: Boolean = false){
+
+    // Sobrecarga de construtor // this = execute o construtor principal
+    //constructor(nome: String) : this(nome, false)
 
     fun getNameLength() : Int {
         return nome.length
