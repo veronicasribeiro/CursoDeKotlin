@@ -25,7 +25,7 @@
 
 fun main() {
 
-    var funcionario1 = Funcionario("Maria", 3_000.0, 45)
+    val funcionario1 = Funcionario("Maria", 3_000.0, 45)
     funcionario1.exibirInformacoes()
 }
 
