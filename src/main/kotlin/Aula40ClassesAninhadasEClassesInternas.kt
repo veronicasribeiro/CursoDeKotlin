@@ -3,7 +3,7 @@ fun main() {
 
     // 1. Classes aninhadas (Nasted Class)
     // 2. Classes internas (Inner Class) - Aqui existe uma hierarquia
-    // 3.
+    // 3. Classes enumeradas (Enum)
 
     val madonna = Musico()
     madonna.descricao()
