@@ -1,9 +1,9 @@
 fun main() {
     // TIPOS DE CLASSES
 
-    // 1. Classes aninhadas (Nasted Class)
-    // 2. Classes internas (Inner Class) - Aqui existe uma hierarquia
-    // 3. Classes enumeradas (Enum)
+    // 1. Classes aninhadas (Nasted Class) - Estrutura
+    // 2. Classes internas (Inner Class) - Hierarquia
+    // 3. Classes enumeradas (Enum) - TAGS
 
     val madonna = Musico()
     madonna.descricao()

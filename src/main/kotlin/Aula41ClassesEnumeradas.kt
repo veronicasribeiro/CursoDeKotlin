@@ -16,6 +16,7 @@ fun main() {
     val cartao = CartaoCredito.valueOf(cartaoCreditoAPINome.uppercase())
 
     // Desconto para a pessoa que comprar usando visa
+    /*
     if (cartao == CartaoCredito.VISA) {
         println("Dá um desconto")
     } else {
@@ -23,7 +24,20 @@ fun main() {
         // Usando o contrutor... Posso acessar as propriedades
         println("Você está usando o cartão ${cartao.label}, seu desconto é de ${cartao.percentualDeDesconto}")
     }
+     */
 
+    // A grande maioria dos casos será utilizado o when
+    when(cartao) {
+       CartaoCredito.VISA -> {
+           println("Dá um desconto")
+       }
+        CartaoCredito.MASTER -> {
+            println("Avisa ao usuário que o cartão VISA tem desconto!")
+        }
+        else -> { // É obrigatório colocar o else no when
+            println("Nenhum desconto aplicado!")
+        }
+    }
 
 }
 
