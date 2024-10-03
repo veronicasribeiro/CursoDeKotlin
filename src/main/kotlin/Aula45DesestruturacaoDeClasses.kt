@@ -1,5 +1,7 @@
 fun main() {
 
+    // Data class armazena estruturas de dados
+
     // Como fazer isso de outra maneira?? DESESTRUTURAÇÃO (Data class)
     val usuario1 = UsuarioDataClass("Zoro", "Ronoroa")
     println("Usuário logado é: ${usuario1.nome}")
