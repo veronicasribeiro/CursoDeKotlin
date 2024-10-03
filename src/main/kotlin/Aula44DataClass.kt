@@ -5,8 +5,8 @@ fun main() {
     // Enum Class
     // Data Class
 
-    val usuario1 = UsuarioDataClass("Luffy")
-    val usuario2 = UsuarioDataClass("Luffy")
+    val usuario1 = UsuarioDataClass("Luffy", "D. Monkey")
+    val usuario2 = UsuarioDataClass("Luffy", "D. Monkey")
 
     // Propriedades são iguais mas os objetos são  (class)
     println(usuario1)
@@ -25,7 +25,7 @@ fun main() {
 }
 
 // data = dados | CLASSE DE DADOS =  O principal intuito é trabalhar com o conteúdo do objeto
-data class UsuarioDataClass(val nome: String) {
+data class UsuarioDataClass(val nome: String, val sobrenome: String) {
     // var - propriedades
     // fun - comportamentos
 
