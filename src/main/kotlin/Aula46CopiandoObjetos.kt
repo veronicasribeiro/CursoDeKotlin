@@ -21,10 +21,6 @@ fun main() {
 
 }
 
-data class CartaoCredito46(val numero: Int, val expiracao: String) {
+data class CartaoCredito46(val numero: Int, val expiracao: String)
 
-}
-
-data class Usuario46(var nome: String, var isAdmin: Boolean, var cartaoCredito: CartaoCredito46) {
-
-}
+data class Usuario46(var nome: String, var isAdmin: Boolean, var cartaoCredito: CartaoCredito46)
