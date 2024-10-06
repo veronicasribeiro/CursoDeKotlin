@@ -1,5 +1,5 @@
 fun main() {
     // MODULES (Modulos) - Modularização??
-    val g = Guitarra("vermelha")
+    val g = Guitarra("azul")
     g.console()
 }
